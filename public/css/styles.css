@@ -1,0 +1,123 @@
+body{
+  font-family:Verdana , sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+header{
+  background: green;
+  color:white;
+}
+
+header a{
+  color:white;
+}
+
+header a:hover{
+  color:white;
+}
+
+.header_menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_menu_inner{
+  display: flex;
+  font-size:24px;
+  padding-right:10px;
+}
+.header_name{
+  font-size:30px;
+}
+.header_menu_title{
+  font-size:36px;
+}
+
+/* ここまでapp.blade.php */
+.listWrapper{
+  margin:0 auto;
+  width:100%;
+  flex-wrap:wrap;
+  display:flex;
+  justify-content: flex-start;
+}
+.list{
+  margin:20px 1.6%;
+  width:30%;
+  border:1px solid #aaa;
+  border-radius:5px;
+}
+.list_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 0;
+}
+.list_header_title{
+  margin:0 5px;
+  width:90%;
+  text-align: center;
+  border-bottom:1px solid #ddd;
+  padding-bottom:10px;
+}
+.list_header_action{
+  width:10%;
+}
+.list_header_action a{
+  color:#aaa;
+}
+
+.card{
+  width:90%;
+  margin:0 auto;
+  border:3px solid #333;
+  border-radius:5px;
+  margin-bottom:20px;
+}
+
+.card_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#333;
+}
+
+.card_header_action{
+  width:50px;
+}
+.card_header_action a{
+  color:#333;
+}
+.card_title{
+  padding-left:10px;
+}
+.card_comment{
+  padding-left:10px;
+  color:#666;
+}
+.card_add{
+  width:90%;
+  margin:0 auto;
+  border-top:1px solid #888;
+  padding:10px;
+}
+.card_add a{
+  color:#333;
+}
+
+@media all and (max-width:764px){
+  .list{
+    width:90%;
+    margin:15px auto;
+  }
+  .header_menu{
+    height:50px;
+    align-items: center;
+  }
+  .header_menu li{
+    font-size:14px;
+  }
+}
