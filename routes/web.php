@@ -38,4 +38,4 @@ Route::get('/cardsdelete/{card_id}' ,'CardsController@destroy');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'ListingsController@index');
